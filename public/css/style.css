@@ -23,7 +23,6 @@ body {
 .content {
     grid-area: content;
     background-color: brown;
-    width: 100%;
     padding: 20px;
 }
 .content p {
@@ -33,6 +32,7 @@ body {
 .sidebar {
     grid-area: sidebar;
     background-color: red;
+    /* height: 100vh; */
 }
 .links {
     grid-area: links;
@@ -53,7 +53,7 @@ body {
     background: tomato;
     padding: 5px;
     width: 200px;
-    height: 150px;
+    height: 100%;
     line-height: 150px;
     flex: 0 0 100%;
 }
@@ -68,14 +68,12 @@ body {
 @media only screen and (min-device-width: 1200px){
     .flex-item {
         flex: 1;
-        height: 100px;
-        line-height: 100px;
     }
     .main-container {
         grid: 
-        "navigation navigation navigation" 1fr
+        "navigation navigation navigation" 150px
         "sidebar content links" auto
-        "footer footer footer" 1fr
+        "footer footer footer" 150px
         / 1fr 3fr 1fr;
     }
 }
