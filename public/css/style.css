@@ -18,7 +18,6 @@ body {
 }
 .navigation {
     grid-area: navigation;
-    font-size: 2em;
 }
 
 .content {
@@ -38,7 +37,6 @@ body {
 .footer {
     grid-area: footer;
     background-color: green;
-    height: 100px;
 }
 .flex-container {
     padding: 0;
@@ -51,9 +49,19 @@ body {
     background: tomato;
     padding: 5px;
     width: 200px;
+    height: 150px;
+    line-height: 150px;
     flex: 0 0 100%;
 }
-@media(min-width: 768px){
+/* Tablet */
+@media only screen and (min-device-width: 768px){
+    .flex-item {
+        flex: 0 0 50%;
+    }
+}
+
+/* Desktop and large screens */
+@media only screen and (min-device-width: 1200px){
     .flex-item {
         flex: 1;
         height: 100px;
