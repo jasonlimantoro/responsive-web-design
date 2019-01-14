@@ -26,6 +26,10 @@ body {
     width: 100%;
     padding: 20px;
 }
+.content p {
+    padding: 30px;
+    line-height: 2;
+}
 .sidebar {
     grid-area: sidebar;
     background-color: red;
